@@ -2,7 +2,7 @@
 import google.generativeai as genai
 from openai import OpenAI
 import anthropic
-from appConfig import (
+from Modules.loadConfig import (
     GEMINI_API_KEY,
     OPENAI_API_KEY,
     CLAUDE_API_KEY,

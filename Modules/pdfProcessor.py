@@ -5,7 +5,7 @@ import streamlit as st
 
 """ takes input of PDFs, model,DB details and ingestion prompt and
     gives output of triplets of relationships and 
-    entities that needs top be stored in DB """
+    entities that needs to be stored in DB """
 
 def process_pdf_and_store(uploaded_file_object, graph_db,\
                            model, ingestion_prompt):

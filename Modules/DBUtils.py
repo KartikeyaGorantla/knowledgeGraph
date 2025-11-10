@@ -108,7 +108,7 @@ class Neo4jConnection:
            - Their directly connected neighbors and relationships.
 
         
-        Question: {question}
+        Question: {question}                        
         """
 
         try:

@@ -1,10 +1,10 @@
 # app.py
 import streamlit as st
-from Modules.appConfig import NEO4J_URI, NEO4J_USERNAME,\
+from Modules.loadConfig import NEO4J_URI, NEO4J_USERNAME,\
       NEO4J_PASSWORD, DB_NAME, configure_apis
-from Modules.appConstants import DEFAULT_INGESTION_PROMPT
-from Modules.graphDB import Neo4jConnection
-from Modules.llmWrapper import ModelWrapper
+from Modules.Constants import DEFAULT_INGESTION_PROMPT
+from Modules.DBUtils import Neo4jConnection
+from Modules.LLMWrapper import ModelWrapper
 from Modules.appUi import render_sidebar, render_chat_interface
 
 # Page Configuration

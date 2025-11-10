@@ -1,9 +1,9 @@
 # appUi.py
 import streamlit as st
-from appConstants import QUESTIONS, DEFAULT_INGESTION_PROMPT
-from pdfProcessor import process_pdf_and_store
+from Modules.Constants import QUESTIONS, DEFAULT_INGESTION_PROMPT
+from Modules.pdfProcessor import process_pdf_and_store
 import google.generativeai as genai
-from appConfig import (
+from Modules.loadConfig import (
     GEMINI_MODEL,
     OPENAI_MODEL,
     CLAUDE_MODEL,
@@ -75,7 +75,7 @@ def render_sidebar(db_connection):
         model_choice = st.selectbox(
             "Choose query model:",
             [GEMINI_MODEL, OPENAI_MODEL, CLAUDE_MODEL],
-            index=0,
+            index=1,
         )
 
         with st.container(border=True, height=380):
